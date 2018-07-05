@@ -787,6 +787,13 @@
 
     move-result-object v1
 
+    .line 111
+    const-string v14, "user-agent"
+
+    const-string v15, "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36"
+
+    invoke-virtual {v1, v14, v15}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+
     .line 112
     const/4 v2, 0x1
 

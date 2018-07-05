@@ -149,6 +149,13 @@
 
     invoke-virtual {v2, v3, v4}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 38
+    const-string v3, "user-agent"
+
+    const-string v4, "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36"
+
+    invoke-virtual {v2, v3, v4}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+
     .line 39
     const/4 v3, 0x1
 
@@ -435,6 +442,13 @@
     const-string v3, "connection"
 
     const-string v4, "close"
+
+    invoke-virtual {v2, v3, v4}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 38
+    const-string v3, "user-agent"
+
+    const-string v4, "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36"
 
     invoke-virtual {v2, v3, v4}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -950,6 +964,13 @@
     invoke-virtual {v6}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
 
     move-result-object v6
+
+    .line 111
+    const-string v14, "user-agent"
+
+    const-string v15, "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36"
+
+    invoke-virtual {v6, v14, v15}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 112
     const/4 v7, 0x1
@@ -1688,6 +1709,13 @@
     invoke-virtual {v7}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
 
     move-result-object v7
+
+    .line 111
+    const-string v14, "user-agent"
+
+    const-string v15, "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36"
+
+    invoke-virtual {v7, v14, v15}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 112
     const/4 v8, 0x1
@@ -2444,6 +2472,13 @@
     invoke-virtual {v1}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
 
     move-result-object v1
+
+    .line 111
+    const-string v14, "user-agent"
+
+    const-string v15, "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36"
+
+    invoke-virtual {v1, v14, v15}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 112
     const/4 v2, 0x1

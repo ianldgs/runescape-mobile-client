@@ -1276,7 +1276,7 @@
 
     move-result-object v0
 
-    const-string v1, "m=dob/set_dob.ws"
+    const-string v1, "m=weblogin/loginform.ws?mod=dob&ssl=1&expired=0&dest=set_dob.ws"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
