@@ -5,7 +5,12 @@ A reverse engineering project for Old School Runescape's mobile client
 
 Currently only a repository of up-to-date mobile release baksmali'd and vanilla apk.
 
-//generate apk
+# Help
+
+## unzip apk
+unzip vanilla-171.apk vanilla-171
+
+## generate apk
 
 java.exe -jar smali.jar assemble smali -o vanilla-171/classes.dex
 
