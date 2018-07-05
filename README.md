@@ -8,10 +8,12 @@ Currently only a repository of up-to-date mobile release baksmali'd and vanilla 
 # Help
 
 ## unzip apk
+```
 unzip vanilla-171.apk vanilla-171
+```
 
 ## generate apk
-
+```
 java.exe -jar smali.jar assemble smali -o vanilla-171/classes.dex
 
 java.exe -jar apktool.jar b vanilla-171
@@ -23,3 +25,4 @@ cp vanilla-171/dist/vanilla-171.apk vanilla-171.apk
 rm .\vanilla-171-aligned.apk
 
 bash -c 'zipalign -v 4 vanilla-171.apk vanilla-171-aligned.apk'
+```
